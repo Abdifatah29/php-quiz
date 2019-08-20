@@ -77,7 +77,68 @@
                 'D' => 'Mouse'
             ),
             'bestAnswer' => 'C'
-        );
+        )
+
+        
+       6 => array(
+        'question' => 'How many legs does a spider have?',
+        'quessTheAnswer' => array(
+            'A' => '12',
+            'B' => '6',
+            'C' => '21',
+            'D' => '8'
+        ),
+        'bestAnswer' => 'D'
+        ),
+
+        7 => array(
+            'question' => ' What is the most recognizable physical feature of the male lion?',
+            'quessTheAnswer' => array(
+                'A' => 'Its claws',
+                'B' => 'Weight',
+                'C' => 'Its mane',
+                'D' => 'Its pride'
+            ),
+            'bestAnswer' => 'C'
+        ),
+
+        8 => array(
+            'question' => '. How many pairs of wings does a bee have?',
+            'quessTheAnswer' => array(
+                'A' => '4',
+                'B' => '2',
+                'C' => '6',
+                'D' => '10'
+            ),
+            'bestAnswer' => 'B'
+        ),
+
+        9 => array(
+            'question' => ' What are baby goats called?',
+            'quessTheAnswer' => array(
+                'A' => 'Cristiano Ronaldo',
+                'B' => 'Kids',
+                'C' => 'Baby goat',
+                'D' => 'Snakes'
+            ),
+            'bestAnswer' => 'B'
+        ),
+
+        10 => array(
+            'question' => 'Are butterflies insects?',
+            'quessTheAnswer' => array(
+                'A)' => 'No',
+                'B)' => 'Yes',
+                'C)' => "'I don't Know",
+                'D)' => 'Maybe'
+            ),
+            'bestAnswer' => 'B'
+        ),
+        
+        //Multiple answers for Wildlife questions
+        //End of Wildlife related questionnaires
+    );
+
     ?>
     <!-- form to record user input -->
     <form action="quiz.php" method="post">
