@@ -192,7 +192,24 @@
             echo $totalCorrect.' out of 10 correct</div>';
         ?>
         <!-- End of Testing for correct answers -->
-
+         <?php
+            }
+        ?>
+        <!-- submit button -->
+        <input type="submit" value="Submit Quiz" >
+        <?php
+            if (isset($_POST['submit'])) { 
+                if (!empty($_POST['answer'])) {
+                    echo "HI";
+                    foreach ($_POST['answer'] as $answer => $value) {
+                        # code...
+                        echo $answer;
+                    }
+                }
+            }
+            else { echo "Please answer all the questiions."; }
+        ?>
+        <!-- End of submit button -->
     </form>
-    <!-- End form to record user input -->
+<!-- End of form -->
 </body>
