@@ -140,8 +140,32 @@
     );
 
     ?>
+    <!-- conditional statements in php -->
+    <?php
+    if (isset($_POST['quessTheAnswer'])){
+        echo $_POST['quessTheAnswer'];
+    }
+    ?>
     <!-- form to record user input -->
     <form action="quiz.php" method="post">
+    <?php 
+        foreach ($Questionnaire as $numbers => $values) {
+     ?>
+     
+     <!-- Nesting Php in Html tags -->
+    <p><?php echo "$numbers " . $values['question'] ?></p>
+
+    <?php
+        foreach ($values['quessTheAnswer'] as $value) {
+    ?>
+        <div>
+            <input type="radio" name="answer" value=`${value}` />
+            <span><?php echo $value ?></span>
+        </div>
+    <?php
+    }
+    ?>
+
     </form>
     <!-- End form to record user input -->
 </body>
