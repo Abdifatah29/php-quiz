@@ -140,31 +140,58 @@
     );
 
     ?>
-    <!-- conditional statements in php -->
-    <?php
-    if (isset($_POST['quessTheAnswer'])){
-        echo $_POST['quessTheAnswer'];
-    }
-    ?>
-    <!-- form to record user input -->
-    <form action="quiz.php" method="post">
-    <?php 
-        foreach ($Questionnaire as $numbers => $values) {
-     ?>
-     
-     <!-- Nesting Php in Html tags -->
-    <p><?php echo "$numbers " . $values['question'] ?></p>
+        <!-- conditional statements in php -->
+        <?php
+        if (isset($_POST['quessTheAnswer'])){
+            echo $_POST['quessTheAnswer'];
+        }
+        ?>
+        <!-- form to record user input -->
+        <form action="quiz.php" method="post">
+        <?php 
+            foreach ($Questionnaire as $numbers => $values) {
+        ?>
+        
+        <!-- Nesting Php in Html tags -->
+        <p><?php echo "$numbers " . $values['question'] ?></p>
 
-    <?php
-        foreach ($values['quessTheAnswer'] as $value) {
-    ?>
-        <div>
-            <input type="radio" name="answer" value=`${value}` />
-            <span><?php echo $value ?></span>
-        </div>
-    <?php
-    }
-    ?>
+        <?php
+            foreach ($values['quessTheAnswer'] as $value) {
+        ?>
+            <div>
+                <input type="radio" name="answer" value=`${value}` />
+                <span><?php echo $value ?></span>
+            </div>
+        <?php
+        }
+        ?>
+        <!-- Testing the correct Answers -->
+        <?php
+            $totalCorrect = 0;
+            $bestAnswer = 
+                [1 =>'B',
+                2 => 'A', 
+                3 => 'B',
+                4 => 'C', 
+                5 => 'C', 
+                6 => 'D', 
+                7 => 'C',
+                8 => 'B', 
+                9 => 'B', 
+                10 =>'B'
+                ];
+
+            foreach ($bestAnswer as $num => $answer)
+            {
+                $key = 'answer-'.$num;
+                if (isset($_POST[$key]) && $_POST[$key] === $answer)
+                {
+                    $totalCorrect++;
+                }
+            }
+            echo $totalCorrect.' out of 10 correct</div>';
+        ?>
+        <!-- End of Testing for correct answers -->
 
     </form>
     <!-- End form to record user input -->
