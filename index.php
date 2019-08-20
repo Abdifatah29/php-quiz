@@ -133,6 +133,9 @@ $Questionnaire = array(
         ),
         'bestAnswer' => 'B'
     ),
+    //End of wildlife questions
+
+    //History related questionnaires
 
         11 => array(
         'question' => 'What was the Nazi symbol called?',
@@ -246,7 +249,7 @@ $Questionnaire = array(
     
     
     //Multiple answers for Wildlife questions
-    //End of Wildlife related questionnaires
+    //End of history related questionnaires
 );
 
 ?>
