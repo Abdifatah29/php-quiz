@@ -271,7 +271,7 @@ $Questionnaire = array(
         foreach ($values['quessTheAnswer'] as $value) {
     ?>
         <div>
-            <input type="radio" name="answer" value=`${value}` />
+            <input type="radio" name="answer[<?php echo $numbers ?>]" value=`${value}` />
             <span><?php echo $value ?></span>
         </div>
     <?php
@@ -279,30 +279,39 @@ $Questionnaire = array(
     ?>
 
     <!-- Testing the correct Answers -->
-    <?php
-        $totalCorrect = 0;
-        $bestAnswer = 
-            [1 =>'B',
-             2 => 'A', 
-             3 => 'B',
-             4 => 'C', 
-             5 => 'C', 
-             6 => 'D', 
-             7 => 'C',
-             8 => 'B', 
-             9 => 'B', 
-             10 =>'B'
-            ];
+    <?php 
 
-        foreach ($bestAnswer as $num => $answer)
-        {
-            $key = 'answer-'.$num;
-            if (isset($_POST[$key]) && $_POST[$key] === $answer)
-            {
-                $totalCorrect++;
+        if(isset($_POST['submit'])) {
+            $totalCorrect = 0;
+
+            if($_POST['answer[1]'] == $bestAnswer[0]){
+                $totalCorrect ++;
+                echo $totalCorrect;
             }
         }
-        echo $totalCorrect.' out of 10 correct</div>';
+        // $totalCorrect = 0;
+        // $bestAnswer = 
+        //     [1 =>'B',
+        //      2 => 'A', 
+        //      3 => 'B',
+        //      4 => 'C', 
+        //      5 => 'C', 
+        //      6 => 'D', 
+        //      7 => 'C',
+        //      8 => 'B', 
+        //      9 => 'B', 
+        //      10 =>'B'
+        //     ];
+
+        // foreach ($bestAnswer as $num => $answer)
+        // {
+        //     $key = 'answer-'.$num;
+        //     if (isset($_POST[$key]) && $_POST[$key] === $answer)
+        //     {
+        //         $totalCorrect++;
+        //     }
+        // }
+        // echo $totalCorrect.' out of 10 correct</div>';
     ?>
     <!-- End of Testing for correct answers -->
      
@@ -313,7 +322,7 @@ $Questionnaire = array(
     ?>
    
     
-    <input type="submit" value="Submit Quiz" >
+    <input type="submit" name="submit" value="Submit Quiz" >
     <?php
         if (isset($_POST['submit'])) { 
             if (!empty($_POST['answer'])) {
