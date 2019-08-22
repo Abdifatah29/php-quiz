@@ -10,16 +10,11 @@
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <!-- Title tag -->
   <title>Quiz questionnaire</title>
-  <style>
-   h2{
-       font-size: 32px red;
-   }
-  </style>
 </head>
 <body>
     <!--Initialization step -->
     <h2>Please take the following quiz</h2>
-    <h5>The Quiz is is made of 20 qustions , 10 wildlife related questions and 10 historical questions.</h5>
+    <h4>The quiz is made of 20 qustions , 10 wildlife related questions and 10 historical questions.</h4>
 <?php 
 //Wildlife related questionnaires
 //Multiple answers for Wildlife questions
@@ -32,7 +27,7 @@ $Questionnaire = array(
             'C' => 'Black Panther',
             'D' => 'Cheeteh'
         ),
-        'bestAnswer' => 'B'
+        'correctAnswer' => 'B'
     ),
 
     2 => array(
@@ -43,7 +38,7 @@ $Questionnaire = array(
             'C' => 'Giraffe',
             'D' => 'Chicken'
         ),
-        'bestAnswer' => 'A'
+        'correctAnswer' => 'A'
     ),
 
     3 => array(
@@ -54,7 +49,7 @@ $Questionnaire = array(
             'C' => 'A female elephant',
             'D' => 'Eagle'
         ),
-        'bestAnswer' => 'B'
+        'correctAnswer' => 'B'
     ),
 
     4 => array(
@@ -65,7 +60,7 @@ $Questionnaire = array(
             'C' => 'Prides',
             'D' => 'LIon kingdom'
         ),
-        'bestAnswer' => 'C'
+        'correctAnswer' => 'C'
     ),
 
     5 => array(
@@ -76,18 +71,18 @@ $Questionnaire = array(
             'C' => 'Gorilla',
             'D' => 'Mouse'
         ),
-        'bestAnswer' => 'C'
+        'correctAnswer' => 'C'
     ),
 
        6 => array(
         'question' => 'How many legs does a spider have?',
         'quessTheAnswer' => array(
-            'A' => '12',
-            'B' => '6',
-            'C' => '21',
-            'D' => '8'
+            'A' => 12,
+            'B' => 6,
+            'C' => 21,
+            'D' => 8
         ),
-        'bestAnswer' => 'D'
+        'correctAnswer' => 'D'
     ),
 
        7 => array(
@@ -98,18 +93,18 @@ $Questionnaire = array(
             'C' => 'Its mane',
             'D' => 'Its pride'
         ),
-        'bestAnswer' => 'C'
+        'correctAnswer' => 'C'
     ),
 
        8 => array(
         'question' => '. How many pairs of wings does a bee have?',
         'quessTheAnswer' => array(
-            'A' => '4',
-            'B' => '2',
-            'C' => '6',
-            'D' => '10'
+            'A' => 4,
+            'B' => 2,
+            'C' => 6,
+            'D' => 10
         ),
-        'bestAnswer' => 'B'
+        'correctAnswer' => 'B'
     ),
 
        9 => array(
@@ -120,7 +115,7 @@ $Questionnaire = array(
             'C' => 'Baby goat',
             'D' => 'Snakes'
         ),
-        'bestAnswer' => 'B'
+        'correctAnswer' => 'B'
     ),
 
        10 => array(
@@ -131,7 +126,7 @@ $Questionnaire = array(
             'C)' => "'I don't Know",
             'D)' => 'Maybe'
         ),
-        'bestAnswer' => 'B'
+        'correctAnswer' => 'B'
     ),
     //End of wildlife questions
 
@@ -140,126 +135,137 @@ $Questionnaire = array(
         11 => array(
         'question' => 'What was the Nazi symbol called?',
         'quessTheAnswer' => array(
-            'A)' => 'No',
-            'B)' => 'Yes',
-            'C)' => "'I don't Know",
-            'D)' => 'Maybe'
+            'A)' => 'Swastika',
+            'B)' => 'Captain John Alcock',
+            'C)' => "German power",
+            'D)' => "Hitler's child"
         ),
-        'bestAnswer' => 'B'
+        'correctAnswer' => 'A'
     ),
 
            12 => array(
-        'question' => 'What is the name of the city where John F. Kennedy was assassinated?',
+        'question' => 'In which year was the death of Queen Elizabeth I?',
         'quessTheAnswer' => array(
-            'A)' => 'No',
-            'B)' => 'Yes',
-            'C)' => "'I don't Know",
-            'D)' => 'Maybe'
+            'A)' => 1903,
+            'B)' => 1605,
+            'C)' => 1994,
+            'D)' => 1603
         ),
-        'bestAnswer' => 'B'
+        'correctAnswer' => 'D'
     ),
 
            13 => array(
-        'question' => 'What date was D-Day?',
+        'question' => 'Name the second largest city in Britain during the Black Death?',
         'quessTheAnswer' => array(
-            'A)' => 'No',
-            'B)' => 'Yes',
-            'C)' => "'I don't Know",
-            'D)' => 'Maybe'
+            'A)' => 'Wincester',
+            'B)' => 'Bristol',
+            'C)' => 'Cardiff',
+            'D)' => 'London'
         ),
-        'bestAnswer' => 'B'
+        'correctAnswer' => 'B'
     ),
 
            14 => array(
         'question' => 'Which war first introduced the use of tanks?',
         'quessTheAnswer' => array(
-            'A)' => 'No',
-            'B)' => 'Yes',
-            'C)' => "'I don't Know",
-            'D)' => 'Maybe'
+            'A)' => 1800,
+            'B)' => 1937,
+            'C)' => 1916,
+            'D)' => 1918
         ),
-        'bestAnswer' => 'B'
+        'correctAnswer' => 'C'
     ),
 
             15 => array(
-        'question' => 'During which year did Christopher Columbus discover the Bahamas?',
+        'question' => ' Which country did Britain fight in the War of Jenkins’s Ear? Spain',
         'quessTheAnswer' => array(
-            'A)' => 'No',
-            'B)' => 'Yes',
-            'C)' => "'I don't Know",
-            'D)' => 'Maybe'
+            'A)' => 'Spain',
+            'B)' => 'Portugal',
+            'C)' => 'France',
+            'D)' => 'Italy'
         ),
-        'bestAnswer' => 'B'
+        'correctAnswer' => 'A'
     ),
 
            16 => array(
         'question' => 'What year did Adolf Hitler die?',
         'quessTheAnswer' => array(
-            'A)' => 'No',
-            'B)' => 'Yes',
-            'C)' => "'I don't Know",
-            'D)' => 'Maybe'
+            'A)' => 1977,
+            'B)' => 2003,
+            'C)' => 1950,
+            'D)' => 1945
         ),
-        'bestAnswer' => 'B'
+        'correctAnswer' => 'D'
     ),
 
             17 => array(
-        'question' => 'What famous wall, built by a Roman Emperor, lies between Scotland and England?',
+        'question' => 'In which decade did compulsory driving testing begin? 1930s (1935)',
         'quessTheAnswer' => array(
-            'A)' => 'No',
-            'B)' => 'Yes',
-            'C)' => "'I don't Know",
-            'D)' => 'Maybe'
+            'A)' => 1935,
+            'B)' => 1934,
+            'C)' => 1903,
+            'D)' => 1989
         ),
-        'bestAnswer' => 'B'
+        'correctAnswer' => 'A'
     ),
 
            18 => array(
-        'question' => 'Who was the first president of America?',
+        'question' => ' In which year was the Wall Street Crash?',
         'quessTheAnswer' => array(
-            'A)' => 'No',
-            'B)' => 'Yes',
-            'C)' => "'I don't Know",
-            'D)' => 'Maybe'
+            'A)' => 1918,
+            'B)' => 1987,
+            'C)' => 1929,
+            'D)' => 1907
         ),
-        'bestAnswer' => 'B'
+        'correctAnswer' => 'c'
     ),
 
            19 => array(
         'question' => 'During which year did the RMS Titanic sink?',
         'quessTheAnswer' => array(
-            'A)' => 'No',
-            'B)' => 'Yes',
-            'C)' => "'I don't Know",
-            'D)' => 'Maybe'
+            'A)' => 1997,
+            'B)' => 1918,
+            'C)' => 1912,
+            'D)' => 1890
         ),
-        'bestAnswer' => 'B'
+        'correctAnswer' => 'c'
     ),
 
            20 => array(
-        'question' => 'What were Norsemen better known as?',
+        'question' => 'Who led the Million Man March on Washington?',
         'quessTheAnswer' => array(
-            'A)' => 'No',
-            'B)' => 'Yes',
-            'C)' => "'I don't Know",
-            'D)' => 'Maybe'
+            'A)' => 'Michael Jackson',
+            'B)' => 'Louis Farrakhan',
+            'C)' => "Donald Trump",
+            'D)' => 'Louis Hernandez'
         ),
-        'bestAnswer' => 'B'
+        'correctAnswer' => 'B'
     ),
     
     
     //Multiple answers for Wildlife questions
     //End of history related questionnaires
 );
-
+    //getting user input
 ?>
 <?php
-    if (isset($_POST['quessTheAnswer'])){
-        echo $_POST['quessTheAnswer'];
+$total = 0;
+function handleOnChange() {
+    global $total;
+    foreach ($Questionnaire as $questionWithAnswers) {
+        foreach ($questionWithAnswers['quessTheAnswer'] as $key => $answers) {
+            if(isset($_POST['submit']) && $_POST["answer-$key"]=== $answers['correctAnswer']) {
+                $total++;
+            } 
+        }
     }
+    return $total;
+
+}
+
 ?>
     <!-- form to record user input -->
-<form action="quiz.php" method="post">
+<form action="index.php" method="post">
     <?php 
         foreach ($Questionnaire as $numbers => $values) {
      ?>
@@ -268,52 +274,16 @@ $Questionnaire = array(
     <p><?php echo "$numbers " . $values['question'] ?></p>
 
     <?php
-        foreach ($values['quessTheAnswer'] as $value) {
+        foreach ($values['quessTheAnswer'] as $key=> $value) {
     ?>
         <div>
-            <input type="radio" name="answer[<?php echo $numbers ?>]" value=`${value}` />
+            <input type="radio" name="answer-[<?php echo $numbers ?>]" onclick="handleOnChange()" value="<?=$key?>" />
             <span><?php echo $value ?></span>
         </div>
     <?php
     }
     ?>
-
-    <!-- Testing the correct Answers -->
-    <?php 
-
-        if(isset($_POST['submit'])) {
-            $totalCorrect = 0;
-
-            if($_POST['answer[1]'] == $bestAnswer[0]){
-                $totalCorrect ++;
-                echo $totalCorrect;
-            }
-        }
-        // $totalCorrect = 0;
-        // $bestAnswer = 
-        //     [1 =>'B',
-        //      2 => 'A', 
-        //      3 => 'B',
-        //      4 => 'C', 
-        //      5 => 'C', 
-        //      6 => 'D', 
-        //      7 => 'C',
-        //      8 => 'B', 
-        //      9 => 'B', 
-        //      10 =>'B'
-        //     ];
-
-        // foreach ($bestAnswer as $num => $answer)
-        // {
-        //     $key = 'answer-'.$num;
-        //     if (isset($_POST[$key]) && $_POST[$key] === $answer)
-        //     {
-        //         $totalCorrect++;
-        //     }
-        // }
-        // echo $totalCorrect.' out of 10 correct</div>';
-    ?>
-    <!-- End of Testing for correct answers -->
+    <br>
      
     <?php
      
@@ -323,18 +293,14 @@ $Questionnaire = array(
    
     
     <input type="submit" name="submit" value="Submit Quiz" >
-    <?php
-        if (isset($_POST['submit'])) { 
-            if (!empty($_POST['answer'])) {
-                echo "HI";
-                foreach ($_POST['answer'] as $answer => $value) {
-                    # code...
-                    echo $answer;
-                }
-            }
-        }
-        else { echo "Please answer all the questiions."; }
-    ?>
+
 </form>
+
+<?php
+ if(isset($_POST['submit'])){
+    echo "<p>"."Your score is ".$total. " / 20"."</p>";
+
+    }
+    ?>
 <!-- End of form -->
 </body>
