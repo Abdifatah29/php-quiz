@@ -217,7 +217,7 @@ $Questionnaire = array(
             'C)' => 1929,
             'D)' => 1907
         ),
-        'correctAnswer' => 'c'
+        'correctAnswer' => 'C'
     ),
 
            19 => array(
@@ -228,7 +228,7 @@ $Questionnaire = array(
             'C)' => 1912,
             'D)' => 1890
         ),
-        'correctAnswer' => 'c'
+        'correctAnswer' => 'C'
     ),
 
            20 => array(
@@ -248,22 +248,6 @@ $Questionnaire = array(
 );
     //getting user input
 ?>
-<?php
-$total = 0;
-function handleOnChange() {
-    global $total;
-    foreach ($Questionnaire as $questionWithAnswers) {
-        foreach ($questionWithAnswers['quessTheAnswer'] as $key => $answers) {
-            if(isset($_POST['submit']) && $_POST["answer-$key"]=== $answers['correctAnswer']) {
-                $total++;
-            } 
-        }
-    }
-    return $total;
-
-}
-
-?>
     <!-- form to record user input -->
 <form action="index.php" method="post">
     <?php 
@@ -275,11 +259,18 @@ function handleOnChange() {
 
     <?php
         foreach ($values['quessTheAnswer'] as $key=> $value) {
+            $new_key = str_replace(")","",$key);
+
+            echo<<<END
+
+            <input type="radio" name='$numbers' onclick="handleOnChange()" value="$new_key" />
+            <span> $value</span><br>
+
+END;
     ?>
-        <div>
-            <input type="radio" name="answer-[<?php echo $numbers ?>]" onclick="handleOnChange()" value="<?=$key?>" />
-            <span><?php echo $value ?></span>
-        </div>
+        
+           
+        
     <?php
     }
     ?>
@@ -295,12 +286,40 @@ function handleOnChange() {
     <input type="submit" name="submit" value="Submit Quiz" >
 
 </form>
-
 <?php
- if(isset($_POST['submit'])){
-    echo "<p>"."Your score is ".$total. " / 20"."</p>";
+    if (isset($_POST['submit'])){
+        $total = 0;
+        for($n=1;$n <= count($Questionnaire);$n++){
+            $correct_answer =($Questionnaire[$n]['correctAnswer']);
+            $name = "$n";
+            $user_input = $_POST[$name];
+            // echo "<br>".$user_input ."<br>";
+            // echo $correct_answer."<br>";
+
+            
+            
+            // $total =0;
+            if($correct_answer == $user_input){
+
+                $total++;
+            }
+            else{
+                // echo 'wrong';
+            }
+        }
+         echo "<p>"."Your score is ".$total. " / 20"."</p>";
+        
+        // for ($k=1;$k<=count($Questionnaire);$k++){
+        //     $name = "$k";
+        //     // echo $name;
+        //     // typeof()
+        //     echo 
+        // }
+
+        // var_dump($Questionnaire);
 
     }
-    ?>
+
+?>
 <!-- End of form -->
 </body>
