@@ -177,7 +177,7 @@ $Questionnaire = array(
     ),
 
             15 => array(
-        'question' => ' Which country did Britain fight in the War of Jenkins’s Ear? Spain',
+        'question' => ' Which country did Britain fight in the War of Jenkins’s Ear?',
         'quessTheAnswer' => array(
             'A)' => 'Spain',
             'B)' => 'Portugal',
@@ -199,7 +199,7 @@ $Questionnaire = array(
     ),
 
             17 => array(
-        'question' => 'In which decade did compulsory driving testing begin? 1930s (1935)',
+        'question' => 'In which decade did compulsory driving testing begin? ',
         'quessTheAnswer' => array(
             'A)' => 1935,
             'B)' => 1934,
@@ -308,6 +308,11 @@ END;
             }
         }
          echo "<p>"."Your score is ".$total. " / 20"."</p>";
+         if($total <= 9 ){
+             echo "Try again";
+         } else {
+             echo"Well Done!";
+         }
         
         // for ($k=1;$k<=count($Questionnaire);$k++){
         //     $name = "$k";
