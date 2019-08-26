@@ -1,0 +1,36 @@
+h2{
+    /* text-align:center; */
+    font-size: 32px;
+    font-family:sans-serif;
+}
+h4{
+    margin-top:0;
+    padding-bottom:4em ;
+    /* text-align:center; */
+    font-family:monospace;
+    font-size: 14px;
+}
+
+.view {
+    background: url("https://www.canva.com/learn/wp-content/uploads/2018/11/best-free-stock-photos.jpg")no-repeat center center;
+    background-size: cover;
+    
+}
+/* https://mdbootstrap.com/img/Photos/Others/img (51).jpg */
+
+@media (min-width: 768px) {
+    .view {
+        overflow: visible;
+        margin-top: -56px;
+    }
+}
+.navbar {
+    z-index: 1;
+}
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
