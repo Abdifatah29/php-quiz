@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Link for stylesheet -->
-  <link rel="stylesheet" href="css/quiz.css"> 
-  <!--  -->
-  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Link for stylesheet -->
+    <link rel="stylesheet" href="css/quiz.css"> 
+    <!--  -->
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
-  <!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<!-- Bootstrap core CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
-  <!-- Title tag -->
-  <title>Quiz questionnaire</title>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/js/mdb.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+    <!-- Title tag -->
+    <title>Quiz questionnaire</title>
 </head>
 <body>
     <!--Main Navigation-->
@@ -24,7 +33,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark black">
         <div class="container">
-        <a class="navbar-brand" href="#"><strong>Navbar</strong></a>
+        <a class="navbar-brand" href="#"><strong>Abdifatah</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,13 +41,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Profile</a>
+                <a class="nav-link" href="#instructions">Instructions</a>
             </li>
             </ul>
         </div>
@@ -46,15 +55,14 @@
     </nav>
 
     <div class="view intro-2">
-        <div class="full-bg-img">
+        <div >
         <div class="mask rgba-black-strong flex-center">
             <div class="container">
             <div class="white-text text-center wow fadeInUp">
-                <h2>This Navbar isn't fixed</h2>
-                <h5>When you scroll down it will disappear</h5>
+                <h2>The Wizard unite quiz</h2>
+                <h5>Awakening Your Inner genius</h5>
                 <br>
-                <p>Full page intro with background image will be always displayed in full screen mode, regardless
-                of device </p>
+                <p>May The Force Be With You.</p>
             </div>
             </div>
         </div>
@@ -70,9 +78,10 @@
     <div class="container">
         <div class="row">
         <div class="col-md-12">
+            <article id="about"><h4>This is a simple Quiz, which presents multiple choice questions to the users. </p>This uses session to store user score and prints at the end of quiz.</h4></article>
              <!--Initialization step -->
-    <h2>Please take the following quiz</h2>
-    <h4>The quiz is made of 20 qustions , 10 wildlife related questions and 10 historical questions.</h4>
+    <h2 id="instructions">Please take the following quiz</h2>
+    <h4>The quiz is made of 20 qustions , 10 wildlife related questions and 10 historical questions.</p>Choose one answer from the four possible answers </p> <strong>GOOD LUCK!</strong></h4
 <?php 
 //Wildlife related questionnaires
 //Multiple answers for Wildlife questions

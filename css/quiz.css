@@ -12,11 +12,12 @@ h4{
 }
 
 .view {
-    background: url("https://www.canva.com/learn/wp-content/uploads/2018/11/best-free-stock-photos.jpg")no-repeat center center;
+    background: url("../images/best-free-stock-photos.webp")no-repeat center center;
     background-size: cover;
     
 }
 /* https://mdbootstrap.com/img/Photos/Others/img (51).jpg */
+/* https://www.canva.com/learn/wp-content/uploads/2018/11/best-free-stock-photos.jpg */
 
 @media (min-width: 768px) {
     .view {
@@ -27,7 +28,9 @@ h4{
 .navbar {
     z-index: 1;
 }
-
+p{
+    font-size: 1.5em;
+}
 html,
 body,
 header,
