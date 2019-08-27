@@ -360,12 +360,8 @@ END;
             $correct_answer =($questionnaire[$n]['correctAnswer']);
             $name = "$n";
             $user_input = $_POST[$name];
-            // echo "<br>".$user_input ."<br>";
-            // echo $correct_answer."<br>";
-
-            
-            
-            // $total =0;
+           
+        
             if($correct_answer == $user_input){
 
                 $total++;
@@ -381,15 +377,6 @@ END;
              echo"Well Done!";
          }
         
-        // for ($k=1;$k<=count($questionnaire);$k++){
-        //     $name = "$k";
-        //     // echo $name;
-        //     // typeof()
-        //     echo 
-        // }
-
-        // var_dump($questionnaire);
-
     }
 
 ?>
