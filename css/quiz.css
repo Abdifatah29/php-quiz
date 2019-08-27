@@ -1,12 +1,10 @@
 h2{
-    /* text-align:center; */
     font-size: 32px;
     font-family:sans-serif;
 }
 h4{
     margin-top:0;
     padding-bottom:4em ;
-    /* text-align:center; */
     font-family:monospace;
     font-size: 14px;
 }
@@ -16,8 +14,6 @@ h4{
     background-size: cover;
     
 }
-/* https://mdbootstrap.com/img/Photos/Others/img (51).jpg */
-/* https://www.canva.com/learn/wp-content/uploads/2018/11/best-free-stock-photos.jpg */
 
 @media (min-width: 768px) {
     .view {
