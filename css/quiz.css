@@ -12,7 +12,7 @@ h4{
 .view {
     background: url("../images/best-free-stock-photos.webp")no-repeat center center;
     background-size: cover;
-    
+
 }
 
 @media (min-width: 768px) {
@@ -24,12 +24,17 @@ h4{
 .navbar {
     z-index: 1;
 }
-p{
+.questionnaire p , span, h2, h5, h4
+{
     font-size: 1.5em;
+    color: #fff;
 }
+
 html,
 body,
 header,
 .view {
   height: 100%;
+  background-color: #242423;
+  color: #fff;
 }
